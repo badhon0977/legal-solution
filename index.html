@@ -1,207 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Justice</title>
-    <!-- google fonts cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="icon" href="./images/business.png" />
-    <!-- daisy ui & tailwind cdn setup -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .poppins {
-        font-family: "Poppins", serif;
-      }
 
-      .eb-garamond {
-        font-family: "EB Garamond", serif;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justice</title>
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="icon" href="./images/business.png" />
+  <!-- daisy ui & tailwind cdn setup -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .poppins {
+      font-family: "Poppins", serif;
+    }
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "titel-primary": "rgba(65, 64, 64, 1)",
-              "btn-primarycolor": "#B68C5A",
-            },
+    .eb-garamond {
+      font-family: "EB Garamond", serif;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "titel-primary": "rgba(65, 64, 64, 1)",
+            "btn-primarycolor": "#B68C5A",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <header class="container mx-auto my-4">
-      <!-- nav section -->
-      <nav>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li class="poppins text-[#707070]"><a>Home</a></li>
-                <li>
-                  <a class="poppins text-[#707070]">Services</a>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Services 1</a></li>
-                    <li><a class="poppins text-[#707070]">Services 2</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="poppins text-[#707070]">Cases</a>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Cases 1</a></li>
-                    <li><a class="poppins text-[#707070]">Cases 2</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="poppins text-[#707070]">Blog</a>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Blog 1</a></li>
-                    <li><a class="poppins text-[#707070]">Blog 2</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="poppins text-[#707070]">Contact Us</a>
-                  <ul class="p-2">
-                    <li>
-                      <a class="poppins text-[#707070]">+8801750000000 </a>
-                    </li>
-                    <li>
-                      <a class="poppins text-[#707070]">info@gmail.com</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+      },
+    };
+  </script>
+</head>
 
-            <a class="btn btn-ghost text-4xl font-extrabold eb-garamond"
-              ><img src="./images/logo2.png"
-            /></a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="poppins text-[#707070]">Home</a></li>
+<body>
+  <header class="container mx-auto my-4">
+    <!-- nav section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li class="poppins text-[#707070]"><a>Home</a></li>
               <li>
-                <details>
-                  <summary class="poppins text-[#707070]">Services</summary>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Services 1</a></li>
-                    <li><a class="poppins text-[#707070]">Services 2</a></li>
-                  </ul>
-                </details>
+                <a class="poppins text-[#707070]">Services</a>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Services 1</a></li>
+                  <li><a class="poppins text-[#707070]">Services 2</a></li>
+                </ul>
               </li>
               <li>
-                <details>
-                  <summary class="poppins text-[#707070]">Cases</summary>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Cases 1</a></li>
-                    <li><a class="poppins text-[#707070]">Cases 2</a></li>
-                  </ul>
-                </details>
+                <a class="poppins text-[#707070]">Cases</a>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Cases 1</a></li>
+                  <li><a class="poppins text-[#707070]">Cases 2</a></li>
+                </ul>
               </li>
               <li>
-                <details>
-                  <summary class="poppins text-[#707070]">Blog</summary>
-                  <ul class="p-2">
-                    <li><a class="poppins text-[#707070]">Blog 1</a></li>
-                    <li><a class="poppins text-[#707070]">Blog 2</a></li>
-                  </ul>
-                </details>
+                <a class="poppins text-[#707070]">Blog</a>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Blog 1</a></li>
+                  <li><a class="poppins text-[#707070]">Blog 2</a></li>
+                </ul>
               </li>
               <li>
-                <details>
-                  <summary class="poppins text-[#707070]">Contact Us</summary>
-                  <ul class="p-2">
-                    <li>
-                      <a class="poppins text-[#707070]">+8801750000000 </a>
-                    </li>
-                    <li>
-                      <a class="poppins text-[#707070]">info@gmail.com</a>
-                    </li>
-                  </ul>
-                </details>
+                <a class="poppins text-[#707070]">Contact Us</a>
+                <ul class="p-2">
+                  <li>
+                    <a class="poppins text-[#707070]">+8801750000000 </a>
+                  </li>
+                  <li>
+                    <a class="poppins text-[#707070]">info@gmail.com</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn bg-btn-primarycolor text-[#FFFFFF]"
-              >Free Consultation</a
-            >
-          </div>
+
+          <a class="btn btn-ghost text-4xl font-extrabold eb-garamond sm:w-auto"><img src="./images/logo2.png" /></a>
         </div>
-      </nav>
-      <!-- banner section -->
-      <section class="banner my-8">
-        <div
-          class="hero min-h-[550px] rounded-lg"
-          style="background-image: url(./images/banner.png)"
-        >
-          <div class="w-auto"></div>
-          <div class="hero-content text-neutral-content text-center">
-            <div class="">
-              <h1 class="font-extrabold eb-garamond text-[#FFFFFF] text-7xl">
-                We Provide Effective <br />
-                Legal Solutions
-              </h1>
-              <p
-                class="poppins font-normal text-base text-[#E7E7E7] mt-[24px] mb-5 text-center"
-              >
-                We Provide Effective Legal Solutions for Your Complex Needs.
-                Expert Legal Guidance and Representation for Successful
-                Outcomes.<br />
-                Navigating Legal Challenges? We Offer Effective Solutions.
-              </p>
-              <div>
-              <input
-                type="text"
-                class="p-4 rounded-md w-auto lg:w-[550px] h-[64px]"
-                placeholder="Search your services"
-              />
-              <button class="poppins btn bg-btn-primarycolor text-white border-none lg:w-[150px] h-[64px] ml-[24px] text-xl font-semibold">
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="poppins text-[#707070]">Home</a></li>
+            <li>
+              <details>
+                <summary class="poppins text-[#707070]">Services</summary>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Services 1</a></li>
+                  <li><a class="poppins text-[#707070]">Services 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="poppins text-[#707070]">Cases</summary>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Cases 1</a></li>
+                  <li><a class="poppins text-[#707070]">Cases 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="poppins text-[#707070]">Blog</summary>
+                <ul class="p-2">
+                  <li><a class="poppins text-[#707070]">Blog 1</a></li>
+                  <li><a class="poppins text-[#707070]">Blog 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="poppins text-[#707070]">Contact Us</summary>
+                <ul class="p-2">
+                  <li>
+                    <a class="poppins text-[#707070]">+8801750000000 </a>
+                  </li>
+                  <li>
+                    <a class="poppins text-[#707070]">info@gmail.com</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-btn-primarycolor text-[#FFFFFF]">Free Consultation</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section class="banner my-8">
+      <div class="hero min-h-[550px] rounded-lg" style="background-image: url(./images/banner.png)">
+        <div class="w-auto"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="">
+            <h1 class="font-extrabold eb-garamond text-[#FFFFFF] text-7xl">
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="poppins font-normal text-base text-[#E7E7E7] mt-[24px] mb-5 text-center">
+              We Provide Effective Legal Solutions for Your Complex Needs.
+              Expert Legal Guidance and Representation for Successful
+              Outcomes.<br />
+              Navigating Legal Challenges? We Offer Effective Solutions.
+            </p>
+            <div>
+              <input type="text" class="p-4 rounded-md w-auto lg:w-[550px] h-[64px]"
+                placeholder="Search your services" />
+              <button
+                class="poppins btn bg-btn-primarycolor text-white border-none lg:w-[150px] h-[64px] ml-[24px] text-xl font-semibold">
                 Search
               </button>
             </div>
           </div>
         </div>
-      </section>
-    </header>
-  </body>
+    </section>
+  </header>
+  <main class="container mx-auto mt-[100px]">
+    <!-- The Legal Practice Area -->
+    <section>
+      <div class="text-center">
+        <h1 class="eb-garamond font-extrabold text-[40px] text-[#414040]">The Legal Practice Area</h1>
+        <p class="poppins text-base	font-normal	mt-[24px]">The Legal Practice Area: Your trusted partner for expert
+          legal advice and solutions. Experience comprehensive legal services at The Legal Practice Area. <br>Find
+          effective legal solutions at The Legal Practice Area. We're here to help.</p>
+      </div>
+      <!-- Practice Areas Grid -->
+      <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+
+          <!-- Business Law -->
+          <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition duration-300">
+            <div class="flex justify-center mb-4">
+              <img src="./images/business.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Business Law</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Business Law governs commercial activities, ensuring fair practices and protecting stakeholders. It
+              provides the legal framework for businesses, covering contracts, corporate law, and intellectual property.
+              Business Law facilitates commerce by establishing rules for transactions and resolving disputes.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+
+          <!-- Criminal Law (Highlighted) -->
+          <div class="bg-gray-200 shadow-md p-6 rounded-lg text-center">
+            <div class="flex justify-center mb-4">
+              <img src="./images/criminal.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Criminal Law</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Criminal law governs actions harmful to society, defining offenses and prescribing punishments. It deals
+              with conduct that is considered harmful to society, and prescribes punishment for such conduct. Criminal
+              law defines crimes, sets out the procedures for prosecuting offenders, and establishes punishments.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+
+          <!-- Child Support -->
+          <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition duration-300">
+            <div class="flex justify-center mb-4">
+              <img src="./images/child.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Child Support</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Child support is a legal obligation for parents to financially contribute to the upbringing of their
+              children. It involves court-ordered payments to cover a child's basic needs, such as food, clothing, and
+              housing. Child support ensures that children receive the financial support they need from both parents.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+
+          <!-- Education Law -->
+          <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition duration-300">
+            <div class="flex justify-center mb-4">
+              <img src="./images/education.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Education Law</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Education law governs the legal framework for schools, students, and educators.
+              It outlines rights, responsibilities, and regulations within educational institutions.
+              Education law ensures equal access to education and maintains educational standards.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+
+          <!-- Divorce Law -->
+          <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition duration-300">
+            <div class="flex justify-center mb-4">
+              <img src="./images/divorce.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Divorce Law</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Divorce law governs the legal dissolution of a marriage.
+              It addresses issues like child custody, property division, and spousal support.
+              Divorce law provides a legal framework for ending a marriage.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+
+          <!-- Tax Law -->
+          <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition duration-300">
+            <div class="flex justify-center mb-4">
+              <img src="./images/tax.png" class="h-10" alt="icon">
+            </div>
+            <h3 class="eb-garamond font-extrabold text-3xl text-[#414040]">Tax Law</h3>
+            <p class="poppins text-base	font-normal text-[#707070]">
+              Tax law governs the collection of taxes, determining who owes taxes and how much.
+              It outlines the rules and regulations for taxation of individuals and businesses.
+              Tax law ensures that individuals and businesses pay their fair share to the government.
+            </p>
+            <div class="flex justify-center mt-4">
+              <button class="bg-btn-primarycolor text-white px-4 py-1 text-sm rounded-full">→</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- What Our Client Say section -->
+     <section>
+      
+     </section>
+  </main>
+</body>
+
 </html>
